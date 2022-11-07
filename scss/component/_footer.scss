@@ -1,0 +1,36 @@
+.footer{
+    background: rgb(181,152,201);
+    background: linear-gradient(90deg, rgba(181,152,201,1) 0%, rgba(240,173,78,1) 41%, rgba(246,80,80,1) 94%);
+    margin: 0;
+    padding: 10px;
+    .icon1, .icon2, .icon3, .icon4{
+        width: 35px;
+        height: 35px;
+        margin: 40px;
+    }
+    .icon1{
+        transition: all 0.2s ease-in-out;
+        border-radius: 50%;
+    }
+    .icon2{
+        transition: all 0.3s ease-in-out;
+    }
+    .icon3{
+        transition: all 0.4s ease-in-out;
+    }
+    .icon4{
+        transition: all 0.5s ease-in-out;
+    }
+    .icon{
+        display: flex;
+        margin-top: 80px;
+    }
+    .icon:hover .icon1,
+    .icon:hover .icon2,
+    .icon:hover .icon3,
+    .icon:hover .icon4,
+    .icon:hover .icon5,
+    .icon:hover .icon6{
+        transform: translatey(-40px);
+    }
+}

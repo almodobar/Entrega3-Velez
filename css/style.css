@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.footer {
+  background: rgb(181, 152, 201);
+  background: linear-gradient(90deg, rgb(181, 152, 201) 0%, rgb(240, 173, 78) 41%, rgb(246, 80, 80) 94%);
+  margin: 0;
+  padding: 10px;
+}
+.footer .icon1, .footer .icon2, .footer .icon3, .footer .icon4 {
+  width: 35px;
+  height: 35px;
+  margin: 40px;
+}
+.footer .icon1 {
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+.footer .icon2 {
+  transition: all 0.3s ease-in-out;
+}
+.footer .icon3 {
+  transition: all 0.4s ease-in-out;
+}
+.footer .icon4 {
+  transition: all 0.5s ease-in-out;
+}
+.footer .icon {
+  display: flex;
+  margin-top: 80px;
+}
+.footer .icon:hover .icon1,
+.footer .icon:hover .icon2,
+.footer .icon:hover .icon3,
+.footer .icon:hover .icon4,
+.footer .icon:hover .icon5,
+.footer .icon:hover .icon6 {
+  transform: translatey(-40px);
+}
+
+body {
+  background: #456;
+  font-family: "Open Sans", sans-serif;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  margin-top: 250px;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type=email],
+.login input[type=password] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type=email]:focus,
+.login input[type=password]:focus {
+  border-color: #888;
+}
+
+.login input[type=submit] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type=submit]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type=submit]:focus {
+  border-color: #05a;
+}
+
+body {
+  background-color: #e0ffff;
+  margin: 0;
+  padding: 0;
+}
+body .btnEnviar:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+  color: var(--bs-link-hover-color);
+  margin-left: 10px;
+}
+body .btnEnviar {
+  background-color: #558B6E;
+  color: #fbfadf;
+  box-shadow: inset 17px 17px 25px #000000, inset -17px -17px 25px #fbfadf;
+}
+
+.navbarPrincipal {
+  display: flex;
+  position: absolute;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbarPrincipal .navbarPropia {
+  margin: 5px;
+  background-color: #333;
+}
+.navbarPrincipal .titulo {
+  border: 1px solid #fbfadf;
+  color: #fbfadf;
+  border-radius: 10%/50%;
+  font-size: x-large;
+  padding: 5px 15px 5px 15px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.navbarPrincipal .div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.navbarPrincipal .aModif:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+.main {
+  margin-top: 130px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+.main .title1, .main .parrafo {
+  font-size: 20px;
+  color: #2D3142;
+  margin-top: 40px;
+}
+.main .input {
+  margin-top: 50px;
+}
+.main .divfoto {
+  text-align: right;
+  opacity: 0.7;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+.section .title2 {
+  font-size: 20px;
+  color: #2D3142;
+  text-align: center;
+}
+
+.div .div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.div a {
+  text-decoration: none;
+  list-style: none;
+  color: #fbfadf;
+  text-align: center;
+}
+.div li a {
+  text-decoration: none;
+  list-style: none;
+  color: #8b8817;
+  text-align: justify;
+}
+
+.diccionario {
+  margin: 10px;
+  margin-left: 280px;
+  margin-top: 150px;
+}
+.diccionario .asidePropio {
+  margin-top: 10px;
+  margin-left: 330px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+}
+
+.registro {
+  margin-top: 120px;
+}
+.registro .btnRegistro {
+  margin-top: 10px;
+  text-align: center;
+}
+.registro .formSpace {
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+.registro .formSpace1 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1660px) {
+  span {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .divfoto {
+    display: none;
+  }
+  .asidePropio {
+    display: none;
+  }
+  .registro {
+    margin-top: 170px;
+  }
+  .texto {
+    margin-top: 170px;
+  }
+  .aBTN {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .divfoto {
+    display: none;
+  }
+  .asidePropio {
+    display: none;
+  }
+  .registro {
+    margin-top: 350px;
+  }
+  .texto {
+    margin-top: 350px;
+  }
+  .main {
+    margin-top: 250px;
+  }
+  .login {
+    margin-top: 350px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

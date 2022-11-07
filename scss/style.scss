@@ -1,0 +1,171 @@
+@import './base/variables';
+@import './component/footer';
+@import './component/ingresar';
+
+body{
+    background-color: #e0ffff;
+    margin: 0;
+    padding: 0;
+    .btnEnviar:hover{
+        transform: scale(1.3);
+        transition: 0.3s;
+        color: var(--bs-link-hover-color);
+        margin-left: 10px;
+    }
+    .btnEnviar{
+        background-color: $colorBtnBack;
+        color: $colorBtn;
+        box-shadow: inset 17px 17px 25px #000000,
+                    inset -17px -17px 25px $colorBtn;
+    }
+}
+.navbarPrincipal{
+    display: flex;
+    position: absolute;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    .navbarPropia{
+        margin: 5px;
+        background-color: #333;
+    }
+    .titulo{
+        border: 1px solid $colorBtn;
+        color: $colorBtn;
+        border-radius: 10% / 50%;
+        font-size: x-large;
+        padding: 5px 15px 5px 15px;
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .aModif:hover{
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+}
+.main{
+    margin-top: 130px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    .title1, .parrafo{
+        font-size: 20px;
+        color: $colorTitle-parrafo;
+        margin-top: 40px;
+    }
+    .input{
+        margin-top: 50px;
+    }
+    .divfoto{
+        text-align: right;
+        opacity: 0.7;
+    }
+}
+.section{
+    display: flex;
+    align-items: center;
+    .title2{
+        font-size: 20px;
+        color:$colorTitle-parrafo;
+        text-align: center;
+    }
+}
+.div{
+    .div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: $colorBtn;
+        text-align: center;
+    }
+    li a{
+        text-decoration: none;
+        list-style: none;
+        color: $colorList;
+        text-align: justify;
+    }
+}
+.diccionario{
+    margin: 10px;
+    margin-left: 280px;
+    margin-top: 150px;
+    .asidePropio{
+        margin-top: 10px;
+        margin-left: 330px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center; 
+    }  
+} 
+.registro{
+    margin-top: 120px;
+    .btnRegistro{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .formSpace{
+        margin-bottom: 10px;
+        margin-top: 100px;
+    }
+    .formSpace1{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1660px) {
+    span{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .divfoto{
+        display: none;
+    }
+    .asidePropio{
+        display: none;
+    }
+    .registro{
+        margin-top: 170px;
+    }
+    .texto{
+        margin-top: 170px;
+    }
+    .aBTN{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .divfoto{
+        display: none;
+    }
+    .asidePropio{
+        display: none;
+    }
+    .registro{
+        margin-top: 350px;
+    }
+    .texto{
+        margin-top: 350px;
+    }
+    .main{
+        margin-top: 250px;
+    }
+    .login{
+        margin-top: 350px;
+    }
+}
