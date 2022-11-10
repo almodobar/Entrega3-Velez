@@ -110,10 +110,15 @@ body{
     }  
 } 
 .registro{
-    margin-top: 120px;
+    margin-top: 220px;
+    max-width: 50%;
+    border: 1px solid black;
+    background: rgb(33,37,41);
+    background: linear-gradient(315deg, rgba(33,37,41,0.5606617647058824) 0%, rgba(255,243,205,0.8883928571428571) 30%, rgba(22,126,148,0.9164040616246498) 100%);
     .btnRegistro{
-        margin-top: 10px;
+        margin-top: 5px;
         text-align: center;
+        padding-bottom: 10px;
     }
     .formSpace{
         margin-bottom: 10px;
@@ -121,6 +126,21 @@ body{
     }
     .formSpace1{
         margin-bottom: 10px;
+    }
+    .forms:active{
+        color: #212529;
+        background-color: #fff;
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        border-radius: 0.375rem;
+            border-top-left-radius: 0.375rem;
+            border-top-right-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+            border-bottom-left-radius: 0.375rem;
+    }
+    .loginRegistro{
+        margin-top: 10px;
     }
 }
 
@@ -131,12 +151,21 @@ body{
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .asidePropio{
+        visibility: hidden;
+    }
+    .diccionario{
+        max-width: 80%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .divfoto{
         display: none;
     }
     .asidePropio{
-        display: none;
+        visibility: hidden;
     }
     .registro{
         margin-top: 170px;
@@ -147,6 +176,9 @@ body{
     .aBTN{
         visibility: hidden;
     }
+    .diccionario{
+        max-width: 80%;
+    }  
 }
 
 @media screen and (max-width: 768px) {
@@ -154,7 +186,7 @@ body{
         display: none;
     }
     .asidePropio{
-        display: none;
+        visibility: hidden;
     }
     .registro{
         margin-top: 350px;
@@ -167,5 +199,8 @@ body{
     }
     .login{
         margin-top: 350px;
+    }
+    .diccionario{
+        max-width: 80%;
     }
 }

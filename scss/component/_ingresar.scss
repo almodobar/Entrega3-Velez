@@ -25,21 +25,22 @@ body {
   margin-right: auto;
   margin-left: auto;
   border: 12px solid transparent;
-  border-bottom-color: #28d;
+  border-bottom-color: rgb(89 120 145);
 }
 
 .login-header {
-  background: #28d;
+  background: rgb(33,37,41);
+  background: linear-gradient(315deg, rgba(33,37,41,0.5606617647058824) 0%, rgba(255,243,205,0.8883928571428571) 30%, rgba(22,126,148,0.9164040616246498) 100%);
   padding: 20px;
   font-size: 1.4em;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: black;
 }
 
 .login-container {
-  background: #ebebeb;
+  background: #778a9d;
   padding: 12px;
 }
 
@@ -74,9 +75,10 @@ body {
 }
 
 .login input[type="submit"] {
-  background: #28d;
+  background: rgb(33,37,41);
+  background: linear-gradient(315deg, rgba(33,37,41,0.5606617647058824) 0%, rgba(255,243,205,0.8883928571428571) 30%, rgba(22,126,148,0.9164040616246498) 100%);
   border-color: transparent;
-  color: #fff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
