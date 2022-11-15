@@ -104,11 +104,19 @@ body{
         margin-top: 10px;
         margin-left: 330px;
         display: flex;
-        flex-direction: column;
         position: absolute;
-        justify-content: center; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div ul{
+        list-style: none;
+    }
+    div ul li a{
+        text-decoration: none;
+        color: black;
     }  
-} 
+}
 .registro{
     margin-top: 220px;
     max-width: 50%;
