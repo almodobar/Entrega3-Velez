@@ -51,7 +51,7 @@ body{
     }
 }
 .main{
-    margin-top: 130px;
+    margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     .title1, .parrafo{
@@ -98,24 +98,45 @@ body{
 }
 .diccionario{
     margin: 10px;
+    padding: 10px;
     margin-left: 280px;
     margin-top: 150px;
+    .divAside{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
     .asidePropio{
         margin-top: 10px;
-        margin-left: 330px;
+        padding: 10px;
         display: flex;
         position: absolute;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 1px solid black;
+        background-color: #09243e;
+        .manuales{
+            margin: 20px;
+        }
+        .titleDic{
+            font-size: 30px;
+            font-weight: bold;
+            border-bottom: 1px solid #86b7fe;
+            color: #86b7fe;
+        }
     }
     div ul{
         list-style: none;
     }
     div ul li a{
         text-decoration: none;
-        color: black;
-    }  
+        color: $colorBtn;;
+    }
 }
 .registro{
     margin-top: 220px;
