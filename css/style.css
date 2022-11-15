@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 .footer {
+  display: flex;
   background: rgb(181, 152, 201);
   background: linear-gradient(90deg, rgb(181, 152, 201) 0%, rgb(240, 173, 78) 41%, rgb(246, 80, 80) 94%);
   margin: 0;
@@ -9,6 +10,26 @@
   width: 35px;
   height: 35px;
   margin: 15px;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer .titleRedes, .footer .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.footer .contactos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.footer .iframe {
+  display: flex;
 }
 .footer .icon1 {
   transition: all 0.2s ease-in-out;
@@ -225,9 +246,10 @@ body .btnEnviar {
 }
 
 .diccionario {
+  max-width: 95%;
   margin: 10px;
   padding: 10px;
-  margin-left: 280px;
+  margin-left: 80px;
   margin-top: 150px;
 }
 .diccionario .divAside {
@@ -237,13 +259,11 @@ body .btnEnviar {
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-start;
-  margin-left: 10%;
 }
 .diccionario .asidePropio {
   margin-top: 10px;
   padding: 10px;
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -308,14 +328,22 @@ body .btnEnviar {
   }
 }
 @media screen and (max-width: 1400px) {
-  .asidePropio {
-    visibility: hidden;
-  }
   .diccionario {
     max-width: 80%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  .aBTN {
+    visibility: hidden;
+  }
+  .navbarPrincipal {
+    padding: 10px;
+  }
+  .diccionario {
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 995px) {
   .divfoto {
     display: none;
   }
@@ -334,6 +362,17 @@ body .btnEnviar {
   .diccionario {
     max-width: 80%;
   }
+  .iframeDiv {
+    display: flex;
+    margin: 20px;
+    padding: 50px;
+  }
+  .footer {
+    justify-content: space-around;
+  }
+  .section {
+    display: flex;
+  }
 }
 @media screen and (max-width: 768px) {
   .divfoto {
@@ -344,18 +383,43 @@ body .btnEnviar {
   }
   .registro {
     margin-top: 350px;
+    max-width: 95%;
   }
   .texto {
     margin-top: 350px;
   }
   .main {
-    margin-top: 250px;
+    margin-top: 20px;
   }
   .login {
     margin-top: 350px;
   }
   .diccionario {
+    margin: 20px;
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main {
+    margin-top: 20px;
+  }
+  .iframe {
+    width: 200px;
+    height: 150px;
+  }
+  .registro {
+    max-width: 95%;
+    height: auto;
+  }
+  .ingreso {
+    max-width: 95%;
+    height: auto;
+  }
+  .diccionario {
     max-width: 80%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 }
 

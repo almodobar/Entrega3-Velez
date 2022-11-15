@@ -1,4 +1,5 @@
 .footer{
+    display: flex;
     background: rgb(181,152,201);
     background: linear-gradient(90deg, rgba(181,152,201,1) 0%, rgba(240,173,78,1) 41%, rgba(246,80,80,1) 94%);
     margin: 0;
@@ -7,6 +8,26 @@
         width: 35px;
         height: 35px;
         margin: 15px;
+    }
+    ul li{
+        list-style: none;
+    }
+    .titleRedes, .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .contactos{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .iframe{
+        display: flex;
     }
     .icon1{
         transition: all 0.2s ease-in-out;

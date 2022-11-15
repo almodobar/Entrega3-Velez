@@ -97,9 +97,10 @@ body{
     }
 }
 .diccionario{
+    max-width: 95%;
     margin: 10px;
     padding: 10px;
-    margin-left: 280px;
+    margin-left: 80px;
     margin-top: 150px;
     .divAside{
         display: flex;
@@ -108,13 +109,11 @@ body{
         flex-wrap: wrap;
         align-content: center;
         justify-content: flex-start;
-        margin-left: 10%;
     }
     .asidePropio{
         margin-top: 10px;
         padding: 10px;
         display: flex;
-        position: absolute;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -181,15 +180,24 @@ body{
 }
 
 @media screen and (max-width: 1400px) {
-    .asidePropio{
-        visibility: hidden;
-    }
     .diccionario{
         max-width: 80%;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px){
+    .aBTN{
+        visibility: hidden;
+    }
+    .navbarPrincipal{
+        padding: 10px;
+    }
+    .diccionario{
+        max-width: 95%;
+    }  
+}
+
+@media screen and (max-width: 995px) {
     .divfoto{
         display: none;
     }
@@ -207,7 +215,18 @@ body{
     }
     .diccionario{
         max-width: 80%;
-    }  
+    }
+    .iframeDiv{
+        display: flex;
+        margin: 20px;
+        padding: 50px;
+    }
+    .footer{
+        justify-content: space-around;
+    }
+    .section{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -219,17 +238,43 @@ body{
     }
     .registro{
         margin-top: 350px;
+        max-width: 95%;
     }
     .texto{
         margin-top: 350px;
     }
     .main{
-        margin-top: 250px;
+        margin-top: 20px;
     }
     .login{
         margin-top: 350px;
     }
     .diccionario{
-        max-width: 80%;
+        margin: 20px;
+        max-width: 95%;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .main{
+        margin-top: 20px;
+    }
+    .iframe{
+        width: 200px;
+        height: 150px;
+    }
+    .registro{
+        max-width: 95%;
+        height: auto;
+    }
+    .ingreso{
+        max-width: 95%;
+        height: auto;
+    }
+    .diccionario{
+        max-width: 80%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 20px;
+    }   
 }
