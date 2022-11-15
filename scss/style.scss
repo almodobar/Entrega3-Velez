@@ -55,9 +55,11 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     .title1, .parrafo{
-        font-size: 20px;
         color: $colorTitle-parrafo;
         margin-top: 40px;
+    }
+    .title1{
+        font-weight: bold;
     }
     .input{
         margin-top: 50px;
