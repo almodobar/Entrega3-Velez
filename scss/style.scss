@@ -18,6 +18,14 @@ body{
         box-shadow: inset 17px 17px 25px #000000,
                     inset -17px -17px 25px $colorBtn;
     }
+    .login input[type=submit]:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+        background-color: #558B6E;
+        color: var(--bs-link-hover-color);
+        box-shadow: inset 17px 17px 25px #000000, inset -17px -17px 25px #fbfadf;
+        font-weight: bold;
+    }
 }
 .navbarPrincipal{
     display: flex;
