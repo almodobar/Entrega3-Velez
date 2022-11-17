@@ -1,4 +1,5 @@
 @import './base/variables';
+@import './base/mixin.scss';
 @import './component/footer';
 @import './component/ingresar';
 
@@ -147,6 +148,14 @@ body{
         text-decoration: none;
         color: $colorBtn;;
     }
+    h2{
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #86b7fe;
+        color: #86b7fe;
+        border-bottom-style: dashed;
+        margin-bottom: 40px;
+    }
 }
 .registro{
     margin-top: 220px;
@@ -180,6 +189,49 @@ body{
     }
     .loginRegistro{
         margin-top: 10px;
+    }
+}
+.artBitcoin{
+    margin-top: 150px;
+    h3{
+        margin-top: 60px;
+    }
+    .imgBitcoin{
+        margin-bottom: 60px;
+    }
+}
+.artEnergia{
+    .imgEnergia{
+        margin-top: 150px;
+        margin-bottom: 60px;
+    }
+    h3{
+        margin-top: 60px;
+    }
+}
+.artEnergia ul li{
+    @include listasDeco
+}
+.artGrafico ul li{
+    @include listasDeco
+}
+.artGrafico{
+    margin-top: 150px;
+    h3{
+        margin-top: 60px;
+    }
+    h4{
+        text-decoration: underline;
+    }
+}
+.footer{
+    .iconos{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
 }
 
@@ -241,12 +293,12 @@ body{
         }
         .contacto{
             display: flex;
-        text-align: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        align-content: flex-end;
+            text-align: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            align-content: flex-end;
         } 
     }
     .section{
@@ -261,7 +313,7 @@ body{
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     .divfoto{
         display: none;
     }
@@ -280,6 +332,15 @@ body{
     }
     .login{
         margin-top: 350px;
+    }
+    .imgEnergia{
+        margin-top: 230px;
+    }
+    .imgBitcoin{
+        margin-top: 230px;
+    }
+    .imgGrafico{
+        margin-top: 230px;
     }
     .diccionario{
         margin: 20px;
