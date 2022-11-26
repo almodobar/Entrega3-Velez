@@ -285,17 +285,25 @@ body{
         visibility: hidden;
     }
     .navbarPrincipal{
-        padding: 10px;
         .titulo{
-            margin-left: 90px;
+            margin-left: 190px;
             margin-right: 50px;
         }
         .aModif{
-            margin-left: 20px;
+            margin-left: 60px;
+        }
+        .img{
+            margin-left: 40px;
         }
     }
     .diccionario{
         max-width: 95%;
+    }
+    .artEnergia{
+        margin-top: 20px;
+    }
+    .artGrafico{
+        margin-top: 170px;
     }  
 }
 
@@ -356,6 +364,19 @@ body{
 }
 
 @media screen and (max-width: 770px) {
+    .navbarPrincipal{
+        margin: 0;
+        padding: 5px;
+        .titulo{
+            margin-right: 200px;
+        }
+        .img{
+            margin-right: 70px;
+        }
+        .aModif{
+            margin-left: 120px;
+        }
+    }
     .divfoto{
         display: none;
     }
@@ -375,14 +396,14 @@ body{
     .login{
         margin-top: 350px;
     }
-    .imgEnergia{
-        margin-top: 230px;
+    .artEnergia{
+        margin-top: 210px;
     }
-    .imgBitcoin{
-        margin-top: 230px;
+    .artBitcoin{
+        margin-top: 340px;
     }
-    .imgGrafico{
-        margin-top: 230px;
+    .artGrafico{
+        margin-top: 360px;
     }
     .diccionario{
         margin: 20px;
@@ -394,7 +415,6 @@ body{
             justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
-            margin-left: 45px;
         }
         .contactos{
             margin-top: 120px;
@@ -408,6 +428,11 @@ body{
             flex-wrap: wrap;
             align-content: center;
             flex-direction: column;
+        }
+        .iframeDiv{
+            margin: 0;
+            padding: 5px;
+            overflow: hidden;
         }
     }
 }

@@ -439,18 +439,24 @@ body .login input[type=submit]:hover {
   .aBTN {
     visibility: hidden;
   }
-  .navbarPrincipal {
-    padding: 10px;
-  }
   .navbarPrincipal .titulo {
-    margin-left: 90px;
+    margin-left: 190px;
     margin-right: 50px;
   }
   .navbarPrincipal .aModif {
-    margin-left: 20px;
+    margin-left: 60px;
+  }
+  .navbarPrincipal .img {
+    margin-left: 40px;
   }
   .diccionario {
     max-width: 95%;
+  }
+  .artEnergia {
+    margin-top: 20px;
+  }
+  .artGrafico {
+    margin-top: 170px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -509,6 +515,19 @@ body .login input[type=submit]:hover {
   }
 }
 @media screen and (max-width: 770px) {
+  .navbarPrincipal {
+    margin: 0;
+    padding: 5px;
+  }
+  .navbarPrincipal .titulo {
+    margin-right: 200px;
+  }
+  .navbarPrincipal .img {
+    margin-right: 70px;
+  }
+  .navbarPrincipal .aModif {
+    margin-left: 120px;
+  }
   .divfoto {
     display: none;
   }
@@ -528,14 +547,14 @@ body .login input[type=submit]:hover {
   .login {
     margin-top: 350px;
   }
-  .imgEnergia {
-    margin-top: 230px;
+  .artEnergia {
+    margin-top: 210px;
   }
-  .imgBitcoin {
-    margin-top: 230px;
+  .artBitcoin {
+    margin-top: 340px;
   }
-  .imgGrafico {
-    margin-top: 230px;
+  .artGrafico {
+    margin-top: 360px;
   }
   .diccionario {
     margin: 20px;
@@ -546,7 +565,6 @@ body .login input[type=submit]:hover {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 45px;
   }
   .footer .contactos {
     margin-top: 120px;
@@ -560,6 +578,11 @@ body .login input[type=submit]:hover {
     flex-wrap: wrap;
     align-content: center;
     flex-direction: column;
+  }
+  .footer .iframeDiv {
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 400px) {
