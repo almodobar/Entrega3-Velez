@@ -2,4 +2,4 @@
 /css/cssviejo.css
 /css/style.css.map
 # Ignorar node_modules
-node_modules
+node_modules/
