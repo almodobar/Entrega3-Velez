@@ -1,6 +1,5 @@
 # Ignorar el css antiguo
-/css/cssviejo.css
-/css/style.css.map
+./css/cssviejo.css
 
 # Ignorar node_modules
-/node_modules
+node_modules
