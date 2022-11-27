@@ -1,0 +1,5 @@
+# Ignorar el css antiguo
+./css/cssviejo.css
+
+# Ignorar node_modules
+node_modules
