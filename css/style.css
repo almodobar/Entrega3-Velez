@@ -231,8 +231,11 @@ body .login input[type=submit]:hover {
 
 .section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  padding: 5px;
+  margin: 5px;
 }
 .section .title2 {
   font-size: 26px;
@@ -240,9 +243,23 @@ body .login input[type=submit]:hover {
   color: #2D3142;
   text-align: center;
 }
+.section .inputCard {
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  width: 50%;
+  height: auto;
+}
 
 .imgSec, .imgSec2, .imgSec3 {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.imgSec:hover, .imgSec2:hover, .imgSec3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .div .div {
@@ -354,6 +371,10 @@ body .login input[type=submit]:hover {
 }
 .registro .loginRegistro {
   margin-top: 10px;
+}
+
+.ingreso .btnIngreso {
+  margin-top: 20px;
 }
 
 .artBitcoin {
@@ -505,6 +526,7 @@ body .login input[type=submit]:hover {
   }
   .section {
     display: flex;
+    flex-direction: column;
   }
   .iconos {
     display: flex;
